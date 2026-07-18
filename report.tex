@@ -1,0 +1,114 @@
+\documentclass[titlepage,fontsize=10.5pt]{jlreq}
+
+%---If you use beamer class, add aspectratio=169 and change jlreq to beamer---%
+
+%---Package part---%
+\usepackage{amssymb,amsmath,amsthm,amscd}
+\usepackage{ascmac}
+\usepackage{bm}
+\usepackage{color}
+\usepackage{derivative}
+\usepackage{enumitem} % If you use beamer metropolis, ignore this package
+\usepackage{fancybox}
+\usepackage{frame,framed}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{physics2}
+\usepackage{siunitx}
+\usepackage{tabularray}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{url}
+\usepackage{titlepic} % If you use beamer metropolis, ignore this package
+\usepackage{wrapfig}
+%---Package part END---%
+
+%---Package Module part---%
+\usephysicsmodule{ab,braket,doubleprod,xmat}
+%---Package Module part END---%
+
+%---Cont foot nad head settings---%
+\DefTblrTemplate{contfoot-text}{normal}{（次ページに続く）}
+\SetTblrTemplate{contfoot-text}{normal}
+\DefTblrTemplate{conthead-text}{normal}{（続き）}
+\SetTblrTemplate{conthead-text}{normal}
+%---Cont foot nad head settings END---%
+
+%---For equition number part---%
+\usepackage[hang,small,bf]{caption}
+\usepackage[subrefformat=parens]{subcaption}
+\captionsetup{compatibility=false}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+%---For equition number part END---%
+
+%---For beamer settings part---%
+%---If you use beamer metropolis,remove header % from below sentense---%
+% \usepackage[haranoaji,deluxe]{luatexja-preset}% Font setting
+% \usepackage{luatexja}% For use japanese
+% \renewcommand{\kanjifamilydefault}{\gtdefault}% Setting normal font to gothic
+% \usetheme[block=fill]{metropolis}% For use metropolis theme
+%---For beamer settings part END---%
+
+\begin{document}
+
+\title{電子顕微鏡実習}
+\author{平山大知}
+\date{\today}
+\maketitle
+
+%---For make index part---%
+\tableofcontents
+\clearpage
+%---For make index part END---%
+
+\section{目的} % 目的(fold)
+    \label{sec.目的}
+    走査電子顕微鏡について理解を深めるために、実際の試料の製作および観察を通して、その動作原理と基本的な操作方法を習得すること。
+    %目的(end)
+\section{背景原理} %背景原理(fold)
+    \label{sec.背景原理}
+    
+    \subsection{電子線} % (fold)
+    \label{sub:電子線}
+    
+    % subsection 電子線 (end)
+
+    \subsection{走査型電子顕微鏡} % (fold)
+    \label{sub:走査型電子顕微鏡}
+    
+    % subsection 走査型電子顕微鏡 (end)
+
+    %背景原理(end)
+\section{実験手段・機材}
+    \label{sec.実験手段・機材}
+    \subsection{試料の作成} % (fold)
+    \label{sub:試料の作成}
+    髪の毛を実際に観察するために髪の毛を用いて試料作成を行った。
+
+    試料台にカーボン製の両面テープを貼付し、その上に髪の毛(\qty{2}{\centi\metre}ほどを)貼付した。
+
+    その後にオートファインコータに試料台を設置し、オートファインコータの真空を引いた後にスパッタリング電流\qty{30}{\milli\volt}に設定、\qty{25}{\sec}コーティングを行う設定として試料台上の試料へコーディングを行った。
+    % subsection 試料の作成 (end)
+
+    \subsection{試料観察} % (fold)
+    \label{sub:試料観察}
+    髪の毛、キャピラリープレート、10円玉を観察した。
+    % subsection 試料観察 (end)
+
+    \subsection{構成元素の解析} % (fold)
+    \label{sub:構成元素の解析}
+    キャピラリープレート、ICチップ部品、鉱石について構成元素の解析を行った。
+    % subsection 構成元素の解析 (end)
+\section{結果}
+
+\section{考察}
+
+\section{まとめ}
+
+
+
+\end{document}
