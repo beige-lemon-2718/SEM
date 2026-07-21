@@ -105,9 +105,15 @@
 
     \subsubsection{試料作成} % (fold)
     \label{ssub:試料作成}
+    走査型電子顕微鏡で観察する場合には、一部試料で下処理をする必要がある。
     
+    まず生体試料をつくる場合、水分を含んでいると、電子線の照射によって発熱し、組織を破壊する可能性がある。また電子顕微鏡内部は真空がひかれるのでこれによっても試料が破壊される可能性がある。しかるに生体試料をつくる場合には水分を取り除く必要がある。
+
+    また誘電体のような試料であるときには、照射した電子線により試料がチャージアップし、そのチャージアップした電荷と電子線とが相互作用を起こして正常に試料観察ができなくなることがある。これを防ぐために表面に導電性のコーティングをし、下の台へ電荷が逃げるように配線をするなどする必要がある。
+
+    コーティングについては二次電子をよく放出するようなコーティングであると像が鮮明となり、例えばコーティング剤としてPtなどを用いる。
     % subsubsection 試料作成 (end)
-    
+
     % subsection 走査型電子顕微鏡 (end)
 
     %背景原理(end)
@@ -129,14 +135,160 @@
 
     \subsection{構成元素の解析} % (fold)
     \label{sub:構成元素の解析}
-    キャピラリープレート、ICチップ部品、鉱石について構成元素の解析を行った。
+    キャピラリープレート、鉱石についてX線解析機能を用い、構成元素の解析を行った。
+    \begin{figure}[H]
+        \centering
+        \begin{minipage}{0.48\textwidth}
+            \centering
+            \includegraphics[width=6cm]{DSC_0208.jpg}
+            \caption{解析した鉱石試料1}
+            \label{fig.解析した鉱石試料1}
+        \end{minipage}
+        \begin{minipage}{0.48\textwidth}
+            \centering
+            \includegraphics[width=6cm]{DSC_0209.jpg}
+            \caption{解析した鉱石試料2}
+            \label{fig.解析した鉱石試料2}
+        \end{minipage}
+    \end{figure}
     % subsection 構成元素の解析 (end)
 \section{結果}
-
+以下に得られた像と、解析した構成元素の表を記す。
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6cm]{./data/hirayama_hair_mes.jpg}
+    \caption{自分の髪の毛を観察した像}
+    \label{fig.髪の毛}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}
+        {0.48\textwidth}
+        \centering
+        \includegraphics[width=6cm]{./data/cap_plt_hirayama.jpg}
+        \caption{キャピラリープレートを観察した像}
+        \label{fig.キャピラリープレート像}
+    \end{minipage}
+    \begin{minipage}
+        {0.48\textwidth}
+        \centering
+        \includegraphics[width=6cm]{./data/hirayama_10yen_mes.jpg}
+        \caption{１０円玉を観察した像}
+        \label{fig.１０円玉像}
+    \end{minipage}
+\end{figure}
+\begin{table}[H]
+    \centering
+    \caption{キャピラリープレートの構成元素解析結果}
+    \label{tab.キャピラリープレートの構成元素解析結果}
+    \begin{tabular}{cccccc}
+        元素 & (\unit{\kilo\electronvolt}) & 質量％ & $\sigma$ & 原子数％ & カチオン数 \\\hline\hline
+        C  K& 0.277	& 8.11	& 0.08	& 23.49	& 2.6383 \\
+        O  K& 0.525	& 17.81	 &0.18	& 38.71	& 17.8690 \\
+        Al K& 1.486	& 0.52	& 0.03	& 0.67	& 0.3388 \\
+        Si K& 1.739	& 6.70	& 0.06	& 8.29	& 5.5461 \\
+        K  K& 3.312	& 0.82	& 0.03	& 0.73	& 0.8343 \\
+        Cr K& 5.411	& 4.70	& 0.07	& 3.14	& 5.5408 \\
+        Fe K& 6.398	& 3.01	& 0.06	& 1.87	& 3.7343 \\
+        Ni K& 7.471	& 31.37	 &0.21	& 18.58	& 37.9470 \\
+        Pb M& 2.342	& 26.97	 &0.24	& 4.53	& 25.5512 \\ \hline
+        合計 & - & 100 & - & 100 & - 
+    \end{tabular}
+\end{table}
+\begin{table}[H]
+    \centering
+    \caption{図\ref{fig.解析した鉱石試料1}に示した鉱石の構成元素解析結果}
+    \label{tab.鉱石１構成元素解析結果}
+    \begin{tabular}{cccccc}
+        元素 & (\unit{\kilo\electronvolt}) & 質量％ & $\sigma$ & 原子数％ & カチオン数 \\\hline\hline
+        C  K & 0.277 & 15.97 & 0.15 & 25.43 & 3.3795 \\
+        O  K & 0.525 & 38.19 & 0.24 & 45.64 & 46.1800 \\
+        Na K & 1.041 & 12.78 & 0.08 & 10.63 & 14.7394 \\
+        Al K & 1.486 & 10.85 & 0.07 & 7.69 & 11.2423 \\
+        Si K & 1.739 & 10.95 & 0.07 & 7.45 & 11.8673 \\
+        Cl K & 2.621 & 4.53 & 0.04 & 2.44 & 6.2661 \\
+        Ca K & 3.690 & 0.14 & 0.02 & 0.07 & 0.2261 \\
+        Pt M & 2.048 & 6.59 & 0.11 & 0.65 & 6.0993 \\ \hline
+        合計 & - & 100 & - & 100 & - 
+    \end{tabular}
+\end{table}
+\begin{table}[H]
+    \centering
+    \caption{図\ref{fig.解析した鉱石試料2}に示した鉱石の構成元素解析結果}
+    \label{tab.鉱石２構成元素解析結果}
+    \begin{tabular}{cccccc}
+        元素 & (\unit{\kilo\electronvolt}) & 質量％ & $\sigma$ & 原子数％ & カチオン数 \\\hline\hline
+        C  K & $0.277$ & $15.05$  & $0.18$ & $25.85$ & $3.4642$ \\
+        O  K & $0.525$ & $40.77$  & $0.32$ & $52.56$ & $46.3642$ \\
+        Si K & $1.739$ & $23.79$  & $0.13$ & $17.47$ & $29.3507$ \\
+        Ca K & $3.690$ & $0.19 $ & $0.02$ & $0.10$ & $0.2722$ \\
+        Mn K & $5.894$ & $7.00 $ & $0.10$ & $2.63$ & $9.0778$ \\
+        Pt M & $2.048$ & $13.20$  & $0.19$ & $1.40$ & $11.4709$ \\ \hline
+        合計 & - & $100$ & - & $100$ & - 
+    \end{tabular}
+\end{table}
+% \begin{figure}[H]
+%     \centering
+%     \begin{minipage}
+%         {0.49\textwidth}
+%         \centering
+%         \caption{図\ref{fig.解析した鉱石試料1}に示した鉱石の構成元素解析結果}
+%         \label{tab.鉱石１構成元素解析結果}
+%         \begin{tabular}{cccccc}
+%             元素 & (\unit{\kilo\electronvolt}) & 質量％ & $\sigma$ & 原子数％ & カチオン数 \\\hline\hline
+%             C  & 0.277 & 15.97 & 0.15 & 25.43 & 3.3795 \\
+%             O  & 0.525 & 38.19 & 0.24 & 45.64 & 46.1800 \\
+%             Na & 1.041 & 12.78 & 0.08 & 10.63 & 14.7394 \\
+%             Al & 1.486 & 10.85 & 0.07 & 7.69 & 11.2423 \\
+%             Si & 1.739 & 10.95 & 0.07 & 7.45 & 11.8673 \\
+%             Cl & 2.621 & 4.53 & 0.04 & 2.44 & 6.2661 \\
+%             Ca & 3.690 & 0.14 & 0.02 & 0.07 & 0.2261 \\
+%             Pt & 2.048 & 6.59 & 0.11 & 0.65 & 6.0993 \\ \hline
+%             合計 & - & 100 & - & 100 & - 
+%         \end{tabular}
+%     \end{minipage}
+%     \begin{minipage}
+%         {0.49\textwidth}
+%         \centering
+%         \caption{図\ref{fig.解析した鉱石試料2}に示した鉱石の構成元素解析結果}
+%         \label{tab.鉱石２構成元素解析結果}
+%         \begin{tabular}{cccccc}
+%             元素 & (\unit{\kilo\electronvolt}) & 質量％ & $\sigma$ & 原子数％ & カチオン数 \\\hline\hline
+%             C  & $0.277$ & $15.05$  & $0.18$ & $25.85$ & $3.4642$ \\
+%             O  & $0.525$ & $40.77$  & $0.32$ & $52.56$ & $46.3642$ \\
+%             Si & $1.739$ & $23.79$  & $0.13$ & $17.47$ & $29.3507$ \\
+%             Ca & $3.690$ & $0.19 $ & $0.02$ & $0.10$ & $0.2722$ \\
+%             Mn & $5.894$ & $7.00 $ & $0.10$ & $2.63$ & $9.0778$ \\
+%             Pt & $2.048$ & $13.20$  & $0.19$ & $1.40$ & $11.4709$ \\ \hline
+%             合計 & - & $100$ & - & $100$ & - 
+%         \end{tabular}
+%     \end{minipage}
+% \end{figure}
 \section{考察}
+\subsection{試料観察} % (fold)
 
+\label{sub:試料観察}
+キャピラリープレート、髪の毛についてその像とまた髪の毛については太さ、キャピラリープレートについては孔の直径と孔の間隔について測定を行った。測定を行う以上の操作は行っていないため考察は省略する。
+% subsection 試料観察 (end)
+
+\subsection{構成元素の解析} % (fold)
+\label{sub:構成元素の解析}
+全てに適用できる話として、得られたCの信号は試料固定に使用しているテープに由来していると考えられるため構成元素の解析では考慮しない。また同様に鉱石で得られたPtの信号は、表面のコーティングに使用されているPt由来であると考えられるため構成元素の解析では考慮しない。
+    \subsubsection{キャピラリープレート} % (fold)
+    \label{ssub:キャピラリープレート}
+    キャピラリープレートの構成元素の解析についてCとPtを考慮しないと、主に信号が得られた元素は、多い順にNi,Pb,O,Si,Cr,Fe,K,Alであった。
+    % subsubsection キャピラリープレート (end)
+
+    \subsubsection{鉱石試料１} % (fold)
+    \label{ssub:鉱石試料１}
+    図\ref{fig.解析した鉱石試料1}に示した鉱石試料１の構成元素の解析についてCとPtを考慮しないと、主に信号が得られた元素は、多い順にO,Na,Si,Al,Cl,Caであった。
+    % subsubsection 鉱石試料１ (end)
+
+    \subsubsection{鉱石試料２} % (fold)
+    \label{ssub:鉱石試料２}
+    図\ref{fig.解析した鉱石試料2}に示した鉱石試料２の構成元素の解析についてCとPtを考慮しないと、主に信号が得られた元素は、多い順にO,Si,Mn,Caであった。
+    % subsubsection 鉱石試料２ (end)
+
+% subsection 構成元素の解析 (end)
 \section{まとめ}
-
-
-
 \end{document}
